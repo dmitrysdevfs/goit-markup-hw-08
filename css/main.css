@@ -29,7 +29,6 @@
 }
 
 body {
-  min-width: 1200px;
   font-family: var(--primary-font-family);
   font-size: 14px;
   color: var(--primary-text-color);
@@ -68,11 +67,28 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -354,95 +370,117 @@ img {
   background-color: var(--secondary-accent-color);
 }
 
-.header {
-  max-height: 80px;
-  /* padding-top: 24px; */
-  /* padding-bottom: 24px; */
-  border-bottom: 1px solid var(--section-border-color);
+.nav {
+  display: none;
+}
+
+.contacts-list {
+  display: none;
 }
 
 .header-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  min-height: 80px;
 }
 
-.nav-list {
+.header {
+  max-height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--section-border-color);
+}
+
+.mobile-menu-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-background-color);
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+
+.mobile-menu__container {
   display: flex;
-  align-items: center;
-  margin-left: 94px;
+  flex-direction: column;
+  position: relative;
+  padding: 48px 40px;
 }
 
-.nav-list__item:not(:last-child) {
-  margin-right: 50px;
+.mobile-menu__nav {
+  flex-grow: 1;
 }
 
-.nav-list__link {
+.mobile-menu__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__nav-link {
+  font-style: normal;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list__link:hover, .nav-list__link:focus {
-  color: var(--primary-accent-color);
+.mobile-menu__contacts-item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
-.current {
-  color: var(--primary-accent-color);
-}
-
-.nav .current {
-  position: relative;
-}
-
-.nav .current::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--primary-accent-color);
-}
-
-.header .contacts-list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.contacts-list__link {
-  display: flex;
-  align-items: center;
+.mobile-menu__contacts-link {
+  font-style: normal;
   font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list__link,
-.header .contacts-list__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.mobile-menu__contacts-link.phone {
+  font-size: 34px;
+  line-height: 1.18;
+  color: var(--primary-accent-color);
 }
 
-.header .phone {
-  margin-left: 50px;
+.mobile-menu__contacts-link.email {
+  font-size: 24px;
+  line-height: 1.667px;
 }
 
-.contacts-list__icon {
-  margin-right: 10px;
-  fill: var(--primary-text-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.mobile-menu__social {
+  display: flex;
+  margin-top: 64px;
 }
 
-.contacts-list__link:hover .contacts-list__icon,
-.contacts-list__link:focus .contacts-list__icon {
-  fill: var(--primary-accent-color);
+.mobile-menu__social-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mobile-menu__social-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--primary-accent-color);
 }
 
 .hero-section {
