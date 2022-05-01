@@ -1,13 +1,90 @@
 .hero-section {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-bg-img.jpg);
+    url('../images/hero-bg-img-mob.jpg');
   background-repeat: no-repeat;
   background-position: center center;
-  /* background-size: cover; */
+  background-size: cover;
   background-color: var(--hero-background-color);
 }
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img-mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero-section {
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img-tab.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 481px) and (min-resolution: 192dpi),
+  screen and (min-width: 481px) and(min-resolution: 2dppx) {
+  .hero-section {
+    background-image:linear-gradient(to right, rgba(47, 48, 58,   0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img-tab@2x.jpg);
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+  .hero-section {
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 769px) and (min-resolution: 192dpi),
+screen and (min-width: 769px) and(min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .hero-section {
+    background-size: contain;
+  }
+}
+
+// .hero-section {
+//   max-width: 768px;
+// }
+
+// @media screen and (min-width: 768px) {
+//   .hero-section {
+//     max-width: 1200px;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .hero-section {
+//     max-width: 1600px;
+//   }
+// }
+
+// .hero-section {
+//   padding-top: 200px;
+//   padding-bottom: 200px;
+//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url(../images/hero-bg-img.jpg);
+//   background-repeat: no-repeat;
+//   background-position: center center;
+//   // background-size: cover;
+//   background-color: var(--hero-background-color);
+// }
 
 .modal-btn {
   display: block;
