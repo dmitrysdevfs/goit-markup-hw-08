@@ -9,10 +9,16 @@
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 769px) {
+  .contact-form-title {
+    line-height: 1.15;
+  }
 }
 
 .contact-form-field {
@@ -103,8 +109,8 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
 
   &::before {
@@ -126,6 +132,13 @@
 
   & > a {
     color: var(--primary-accent-color);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .contact-form-checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
