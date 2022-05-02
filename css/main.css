@@ -137,8 +137,15 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .social-list {
@@ -721,28 +728,19 @@ img {
   background-color: var(--secondary-accent-color);
 }
 
-.features-section {
-  padding-top: 94px;
-}
-
-.features-list {
-  display: flex;
-  justify-content: space-between;
-}
-
 .features-list__item {
-  width: 270px;
+  max-width: 450px;
 }
 
 .features-list__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .features-list__icon-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--secondary-background-color);
