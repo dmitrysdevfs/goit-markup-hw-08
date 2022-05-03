@@ -18,12 +18,12 @@
     margin-top: 30px;
   }
 }
- 
+
 @media screen and (min-width: 1200px) {
   .features-section {
     padding-bottom: 0;
   }
-    
+  
   .features-list {
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -42,7 +42,6 @@
     }
   }
 }
-
 
 .features-list__icon-wrapper {
   display: flex;
@@ -66,7 +65,7 @@
   color: var(--secondary-text-color);
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .features-list__title {
     text-align: left;
   }

@@ -791,7 +791,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .features-list__title {
     text-align: left;
   }
