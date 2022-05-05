@@ -39,8 +39,8 @@
 }
 
 .team-member-description {
-  max-width: 450px;
-  padding: 30px 122px 24px;
+  // max-width: 450px;
+  padding: 30px 40px 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -59,7 +59,7 @@
   }
 
   .team-member-card {
-    width: 354px;
+    // width: 354px;
   }
   .team-member-description {
     padding: 30px 74px 24px;
@@ -68,7 +68,7 @@
 
 @media screen and (min-width: 1200px) {
   .team-member-card {
-    width: 270px;
+    // width: 270px;
   }
   .team-member {
     flex-basis: calc((100% - 120px) / 4);

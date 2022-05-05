@@ -2,6 +2,12 @@
   max-width: 450px;
 }
 
+@media screen and (max-width: 767px) {
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .features-list {
     display: flex;
@@ -72,7 +78,7 @@
 }
 
 .features-list__description {
-  height: 75px;
+  // height: 75px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
