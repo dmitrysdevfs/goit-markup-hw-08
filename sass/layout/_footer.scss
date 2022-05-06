@@ -49,9 +49,6 @@
   color: var(--primary-accent-color);
 }
 
-// .footer-wraper {
-//   display: flex;
-// }
 
 .social-media {
   display: flex;
@@ -152,6 +149,32 @@
     width: 450px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .footer-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:baseline;
+    flex-basis: 100%;
+  }
+
+  .address-wraper {
+    margin-left: 60px;
+  }
+  
+  .social-media {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: 74px;
+    width: 206px;
+  }
+
+  .subscribe-form {
+    flex-basis: 100%;
+    margin-top: 60px;
+  }
+}
+
 
 @media screen and (min-width: 1200px) {
   .subscribe-form-input {
