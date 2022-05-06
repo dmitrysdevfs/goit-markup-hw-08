@@ -987,6 +987,7 @@ img {
 }
 
 .contacts {
+  min-width: 230px;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
@@ -1140,9 +1141,38 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-wraper {
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    flex-basis: auto;
+  }
+  .address-wraper {
+    margin-left: 0;
+  }
+  .contacts .contacts-list {
+    display: block;
+  }
+  .social-media {
+    display: block;
+    margin-left: 70px;
+  }
+  .subscribe-form {
+    flex-basis: auto;
+    margin-top: 0;
+    margin-left: auto;
+  }
+  .subscribe-call {
+    align-self: flex-start;
+  }
+  .subscribe-form-email-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+  }
   .subscribe-form-input {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
