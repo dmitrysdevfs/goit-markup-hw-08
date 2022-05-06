@@ -439,7 +439,7 @@ img {
   .nav {
     display: none;
   }
-  .contacts-list {
+  .header .contacts-list {
     display: none;
   }
   .mobile-menu-btn {
@@ -978,16 +978,27 @@ img {
   background-color: var(--footer-background-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .address-wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .contacts {
-  min-width: 230px;
   margin-top: 20px;
-  margin-right: 70px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 0;
   font-style: inherit;
 }
 
 .contacts .contacts-list {
+  display: flex;
+  flex-direction: column;
   max-height: 82px;
+  align-items: center;
 }
 
 .footer .contacts-list__item:not(:last-child) {
@@ -1011,13 +1022,13 @@ img {
   color: var(--primary-accent-color);
 }
 
-.footer-wraper {
-  display: flex;
-}
-
 .social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-width: 206px;
-  margin-top: 10px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .join,
@@ -1032,6 +1043,8 @@ img {
 
 .footer .social-list {
   margin-top: 20px;
+  justify-content: space-between;
+  width: 206px;
 }
 
 .footer .social-list__icon {
@@ -1048,21 +1061,25 @@ img {
 }
 
 .subscribe-form {
+  display: flex;
+  flex-direction: column;
   margin-top: 10px;
-  margin-left: auto;
+}
+
+.subscribe-call {
+  align-self: center;
 }
 
 .subscribe-form-email-wrapper {
   display: flex;
-  justify-content: end;
+  flex-direction: column;
   align-items: center;
   margin-top: 20px;
 }
 
 .subscribe-form-input {
-  margin-right: 12px;
-  width: 358px;
   height: 50px;
+  margin-bottom: 20px;
   padding: 16px;
   background-color: var(--footer-background-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1085,6 +1102,26 @@ img {
 .subscribe-form-input:focus {
   outline: none;
   border-color: var(--primary-accent-color);
+}
+
+@media screen and (max-width: 479px) {
+  .subscribe-form-input {
+    flex-basis: calc(100% - 30px);
+    min-width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe-form-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form-input {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .subscribe-form-submit-btn {
