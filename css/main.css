@@ -219,7 +219,7 @@ img {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 582px;
@@ -268,7 +268,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .contact-form-title {
     line-height: 1.15;
   }
@@ -388,7 +388,7 @@ img {
   color: var(--primary-accent-color);
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .contact-form-checkbox-label {
     font-size: 14px;
     line-height: 1.71;
@@ -1235,9 +1235,7 @@ img {
   .filters-list {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: -15px;
-    margin-left: -8px;
+    justify-content: flex-start;
     margin-bottom: 40px;
   }
   .filters-list__item {
@@ -1248,11 +1246,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .filters-list {
+    justify-content: center;
     margin-bottom: 30px;
     min-width: 610px;
   }
   .filters-list__item {
     flex-basis: auto;
+    margin-top: 0;
+    margin-left: 0;
   }
   .filters-list__item:not(:last-child) {
     margin-right: 8px;
@@ -1298,7 +1299,7 @@ img {
   .projects-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     margin-left: -30px;
     margin-top: -30px;
   }
